@@ -1,0 +1,44 @@
+.conteiner{
+    display: grid;
+    grid-template-columns: 150px  minmax(150px, 8fr);
+    grid-template-rows: 150px auto 80px;
+    grid-template-areas: "h h" "s m" "f f";
+    grid-gap: 3px;
+    width:initial;
+    height: max-content;
+    margin: auto;
+  
+    object-fit:fill contain;
+
+}
+.item_item-1{
+
+   grid-area: h;
+   background-color: beige;
+   padding: 10px;
+   justify-items: auto;
+}
+.item_item-1 img {
+
+    max-width: 100%;
+    max-height: 100%;
+}
+.item_item-1 .item_item-1 .logotext{
+    
+}
+
+.item_item-2{
+    background-color: rgb(194, 245, 234); 
+    grid-area: s;
+}
+.item_item-3{
+    background-color: rgb(225, 231, 231);
+    grid-area: m;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+.item_item-4{
+    background-color: rgb(213, 233, 227);
+    grid-area: f;
+}
